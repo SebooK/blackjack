@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.app {
+    background-color: rgba(0, 16, 100, 0.78);
+    height: 100vh;
+}
+
+.app__game {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game__dealer, .game__player {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    width: 50%;
+    position:relative;
+}
+
+.dealer__cards, .player__cards {
+    display: flex;
+    width: 100%;
+    height: 35vh;
+}
+
+.img__element {
+    background: center;
+    width: 10vw;
+}
+
+.dealer__cards .cards__img:first-of-type:after{
+    background-color: black;
+    border-radius: 5px;
+    content: " ";
+    display: block;
+    height: 30vh;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 10vw;
+}
+
+.dealer__cards .cards__img.show:first-of-type:after {
+    display:none;
+    background: none;
+}
+
+.menu__buttons {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 30vh;
+}
+
+.menu__casinoButtons {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+}
+
+.game__actions{
+    width: 50%;
+    height: 40vh;
+}
+
+.game__menu{
+    width: 100%;
+    height: 35vh;
+    display:flex;
+}
+.game__rounds {
+    height: 5vh;
+    width: 100%;
+    padding-left:2em;
+}
+
+.menu__credits {
+    display:flex;
+    flex-direction: column;
+    height: 35vh;
+    text-align: center;
+    width:25%;
+}
+
+
+.credits__title, .credits__value,.game__rounds,.credits__ranking, .credits__top {
+    color:white;
+    font-size:2em;
+    font-weight:bold;
+}
+
+.credits__top {
+    display:flex;
+    flex-direction: column;
+}
+
+.game__history {
+    width: 50%;
+    height: 60vh;
+}
+
+.history__element {
+    display:flex;
+    justify-content: space-between;
+    padding:0.5em 0;
+}
+
+.history__element:nth-child(2n+1) {
+    background-color: rgba(53, 82, 255, 0.78)
+}
+
+.buttons__casinoChips {
+    display: flex;
+    padding-top: 2em;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #3C3B3B;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.player__score, .dealer__score {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    height: 5vh;
+    order: 0;
+    text-align: center;
+    width: 50vw;
+    justify-content: center;
+}
+
+.history__header {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    height: 10vh;
+    order: 0;
+    width: 50vw;
+}
+
+.history__rounds {
+    height: 30vh;
+}
+
+.header__title {
+    padding: 0 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.header__columnsTitle {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 0.5em;
+    padding: 0 1em;
+}
+
+.history__round, .history__playerHand, .history__dealerHand, .history__credits {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.history__round {
+    padding-left: 2em;
+}
+.history__credits {
+    padding-right: 1em;
+}
+
+
+.button:disabled, div[disabled], .button:hover {
+    opacity: 0.5;
+}
+
+
+.casino__chips {
+    border: 13px dashed white;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: Helvetica, serif;
+    font-weight: 700;
+    height: 100px;
+    line-height: 75px;
+    margin:0.3em;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    z-index: 2;
+}
+
+.casino__chips:hover {
+    opacity: 0.5
+}
+
+.casino__chips:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: -16px;
+    border-radius: 50%;
+    content: '';
+}
+
+.casino__chips:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 5px;
+    border: 3px dashed white;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    content: '';
+}
+
+.blue {
+    background: blue;
+    content: '250';
+}
+
+.green {
+    background: green;
+    content: '500';
+}
+
+.red {
+    background: red;
+    content: '100';
+}
+
