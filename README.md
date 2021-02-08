@@ -17,8 +17,8 @@ My first game ever made. It's simple JavaScript blackjack game using [Deck of Ca
     
     npm install
 ```
-
-## Playable part
-
-If you want just play a game go to **dist** folder and run index.html
+## Next step run 
+```bash
+    npm run build or npm run dev
+```
 
